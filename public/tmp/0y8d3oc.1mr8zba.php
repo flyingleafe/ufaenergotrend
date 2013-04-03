@@ -75,6 +75,7 @@
     </div>
 </div>
 
+<!--
 <div class="feedback">
     <div class="container">
         <section>
@@ -84,6 +85,7 @@
         </section>
     </div>
 </div>
+-->
 
 <div class="conclusion">
     <div class="container">

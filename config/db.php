@@ -14,7 +14,7 @@ define('DB_PORT', '3306');
 define('DB_NAME', 'ufaenergotrend');
 
 // Username
-define('DB_USERNAME', 'root');
+define('DB_USERNAME', 'ufaenergotrend');
 
 //Password
 define('DB_PASSWORD', '145236');

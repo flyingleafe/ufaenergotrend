@@ -485,7 +485,7 @@ header
   padding: 7em 0
   // пока не сделали фидбэк, побудет тут
   +box-shadow(rgba(black, .4) 0 -3px 3px)
-  background: lighten( saturate(crimson, 10%), 10%) url(/img/scyscrapers.png) center center no-repeat
+  background: lighten( saturate(crimson, 10%), 10%) url(/img/scyscrapers-mid.png) center center no-repeat
   .left, .right
     float: left
     +box-sizing(border-box)
@@ -638,6 +638,9 @@ footer
       +background-image(url(/img/enter.png), linear-gradient(lighten($gray, 15%), lighten($gray, 10%)) )
       &:hover
         +background-image(url(/img/enter.png), linear-gradient(lighten($gray, 16%), lighten($gray, 11%)) )
+
+  .conclusion
+    background-image: url(/img/scyscrapers.png)
 
   .container
     width: 1200px

@@ -711,7 +711,7 @@ header .thankyou p {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 -3px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 -3px 3px;
   box-shadow: rgba(0, 0, 0, 0.4) 0 -3px 3px;
-  background: #f82b54 url(/img/scyscrapers.png) center center no-repeat;
+  background: #f82b54 url(/img/scyscrapers-mid.png) center center no-repeat;
 }
 /* line 489, ../../ui/sass/screen.sass */
 .conclusion .left, .conclusion .right {
@@ -957,6 +957,11 @@ footer .column {
   }
 
   /* line 642, ../../ui/sass/screen.sass */
+  .conclusion {
+    background-image: url(/img/scyscrapers.png);
+  }
+
+  /* line 645, ../../ui/sass/screen.sass */
   .container {
     width: 1200px;
   }

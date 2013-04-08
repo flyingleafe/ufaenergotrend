@@ -88,11 +88,11 @@ $(function() {
         fsm2 = $.extend(true, {}, fsm1);
 
     // Custom easing for beautiful form disappearing :3
-    $.easing.easeInOutBack = function (x, t, b, c, d, s) {
+    /*$.easing.easeInOutBack = function (x, t, b, c, d, s) {
         if (s == undefined) s = 1.70158; 
         if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
         return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
-    }
+    }*/
 
     // Retrieving form elements
     $('#appsubmit, #appsubmit2').each( function() {
@@ -122,7 +122,30 @@ $(function() {
                     wrapper.hide()
                 });
             },
-            finish2 = function() {};
+            finish2 = function() {
+                var left = self.parents('.container').children('.left').css('overflow', 'hidden'),
+                    right = left.siblings('.right').css('overflow', 'hidden');
+                left.animate({
+                    width: 0
+                }, getTheFuckOutTime / 3, "easeOutCubic", function() {
+                    left.children('.inner-first').hide();
+                    left.children('.inner-second').show();
+                    left.animate({
+                        width: "50%"
+                    }, getTheFuckOutTime / 3, "easeInCubic", function() {
+                        right.animate({
+                            width: 0
+                        }, getTheFuckOutTime / 3, "easeOutCubic");
+                        left.animate({
+                            width: "100%"
+                        }, getTheFuckOutTime / 3, "easeOutCubic", function() {
+                            left.animate({
+                                borderRightColor: jQuery.Color("transparent")
+                            }, getTheFuckOutTime / 4);
+                        })
+                    })
+                });
+            };
 
         var finish = eval( self.data('finish') );
 
@@ -376,8 +399,6 @@ $(function() {
     //////////////////////
     var changepass  = $('#changepass'),
         adduser     = $('#useradd');
-
-    console.log(adduser);
 
     changepass.submit(function(e) {
         e.preventDefault();

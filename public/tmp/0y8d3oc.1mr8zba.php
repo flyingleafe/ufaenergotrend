@@ -90,9 +90,16 @@
 <div class="conclusion">
     <div class="container">
         <div class="left">
-            <h1>Станьте нашим партнером прямо сейчас</h1>
-            <div class="dot-divide white"></div>
-            <p class="big">Оставьте свои контактные данные в форме справа, и очень скоро мы свяжемся с вами.</p>
+            <div class="inner-first">
+                <h1>Станьте нашим партнером прямо сейчас</h1>
+                <div class="dot-divide white"></div>
+                <p class="big">Оставьте свои контактные данные в форме справа, и очень скоро мы свяжемся с вами.</p>
+            </div>
+            <div class="inner-second">
+                <h1>Спасибо за заявку!</h1>
+                <div class="dot-divide white"></div>
+                <p class="big">Надеемся на успешное сотрудничество!</p>
+            </div>
         </div>
         <div class="right">
             <div class="appform-bot">
@@ -116,6 +123,7 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/vendor/jquery.color.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="lib/js/head.min.js"></script>

@@ -346,6 +346,7 @@ header
 
 .whatwedo
   background: white url(/img/grid.png)
+  padding-bottom: 1em
 
   .pad
     position: absolute
@@ -357,22 +358,27 @@ header
   .chart
     +img-like("chart")
     float: left
+  .free-lamp
+    float: left
+    +img-like("free-lamp")
 
 
   section
     position: relative
     width: 80%
-    margin: 0 auto
+    margin: 0 auto 2em auto
 
   p
     font-size: 1.6em
-    width: 70%
+    // width: 70%
     +box-sizing(border-box)
 
     &.first
       float: left
       margin-top: 3em
+      width: 70%
     &.second
+      width: 49%
       float: right
       margin-top: 3em
 
@@ -393,6 +399,9 @@ header
 
   .reveal
     position: relative
+
+    *
+      line-height: 1.2
     .controls
       position: absolute
       top: 0

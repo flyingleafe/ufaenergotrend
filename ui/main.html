@@ -36,7 +36,7 @@
             <div class="clearfix"></div>
         </section>
         <section>
-            <div class="ir"></div>
+            <div class="ir free-lamp"></div>
             <p class="second">Мы модернизируем вашу энергосистему <strong>за свой счет</strong>.</p>
             <div class="clearfix"></div>
         </section>
@@ -53,8 +53,9 @@
             </section>
             <section>
                 <section>
-                    <h1 class="sectionhead"><span>Еще раз</span></h1>
-                    <p>больше слайдов!</p>
+                    <h1 class="sectionhead"><span>Что такое энергосервисный контракт?</span></h1>
+                    <div class="column50"></div>
+                    <div class="column50"></div>
                 </section>
                 <section>
                     <h1 class="sectionhead"><span>И еще раз!</span></h1>

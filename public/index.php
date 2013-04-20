@@ -23,6 +23,7 @@ if (function_exists('apache_get_modules') &&
 
 F3::set('DEBUG',3);
 F3::set('UI','../ui/');
+F3::set('IN_DEV', true); // в разработке или запущен
 
 ///////////////////
 // Mail settings //
@@ -62,8 +63,12 @@ if(F3::get('COOKIE.login')) {
 
 F3::route('GET /',
 	function() {
-		F3::set('content', 'main.html');
-		F3::set('users', F3::get('DB')->exec("SELECT * FROM ".DB_USERS_TABLE.";"));
+		if( !F3::get('IN_DEV') or F3::get('USER') ) {
+			F3::set('content', 'main.html');
+			F3::set('users', F3::get('DB')->exec("SELECT * FROM ".DB_USERS_TABLE.";"));
+		} else {
+			F3::set('content', 'maintenance.html');
+		}
 		echo Template::instance()->render('index.html');
 	}
 );
@@ -71,8 +76,13 @@ F3::route('GET /',
 F3::route('GET /@page',
 	function () {
 		$page = F3::get('PARAMS.page');
-		F3::set('content', "$page.html");
-		echo Template::instance()->render('index.html');
+		if( file_exists("page.$page.html") and !F3::get('IN_DEV') ) {
+			F3::set('content', "page.$page.html");
+			echo Template::instance()->render('index.html');
+		} else {
+			header("HTTP/1.0 404 Not Found");
+			echo Template::instance()->render('404.html');
+		}
 	}
 );
 
@@ -186,12 +196,6 @@ F3::route('POST /login',
 				'pw'		=> $pw
 			)
 		);
-	}
-);
-
-F3::route ('GET /reveal',
-	function() {
-		echo View::instance()->render('reveal.html');
 	}
 );
 

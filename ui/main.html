@@ -52,10 +52,27 @@
                 <p class="notice">Переключайтесь между слайдами, используя клавиши <big>&uarr;, &darr;, &larr;, &rarr;</big> или стрелки по бокам.</p>
             </section>
             <section>
-                <section>
-                    <h1 class="sectionhead"><span>Что такое энергосервисный контракт?</span></h1>
-                    <div class="column50"></div>
-                    <div class="column50"></div>
+                <section class="clearfix">
+                    <h1 class="sectionhead compact"><span>Что такое энергосервисный контракт?</span></h1>
+                    <div class="column50 fragment">
+                        <img src="http://dummyimage.com/140x200/c9c9c9/09090a.png" alt="" class="side-pic">
+                        <p>
+                            Допустим, вашему предприятию необходимо заменить старое и неэнергоэффективное оборудование на новое, <strong>но у вас нет на это средств</strong>.
+                        </p>
+                    </div>
+                    <div class="column50 fragment">
+                        <img src="http://dummyimage.com/140x200/c9c9c9/09090a.png" alt="" class="side-pic">
+                        <p>
+                            На помощь приходит ООО "Уфаэнерготренд". <br>
+                            Мы устанавливаем новое оборудование <strong>самостоятельно</strong> и <strong>за свой счет</strong>.
+                        </p>
+                    </div>
+                    <div class="bottom fragment">
+                        <img src="http://dummyimage.com/140x200/c9c9c9/09090a.png" alt="" class="side-pic">
+                        <p>
+                            Вы оплачиваете наши услуги <strong>из тех средств, что сэкономили на энергии</strong>.
+                        </p>
+                    </div>
                 </section>
                 <section>
                     <h1 class="sectionhead"><span>И еще раз!</span></h1>

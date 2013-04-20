@@ -48,21 +48,6 @@ $(function() {
         slider.slide();
     }
 
-    //////////////////////////////////
-    // Utility validating functions //
-    //////////////////////////////////
-
-    function validateEmail(email) { 
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-    }
-
-    function validatePhone(phone) {
-        // var re = /^(\+7[-. ]?|8[ .-]?)?(\()?([0-9]{3})(?(2)\))[-. ]?(([0-9]{2})|([0-9]{3}))[-. ]?([0-9]{2})[-. ]?(?(6)([0-9]{2})|([0-9]{3}))$/;
-        var re = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
-        return re.test(phone);
-    }
-
     ///////////////////////////////
     // Application form handling //
     ///////////////////////////////
@@ -86,13 +71,6 @@ $(function() {
     }), 
         // creating a clone of our machine for second form
         fsm2 = $.extend(true, {}, fsm1);
-
-    // Custom easing for beautiful form disappearing :3
-    /*$.easing.easeInOutBack = function (x, t, b, c, d, s) {
-        if (s == undefined) s = 1.70158; 
-        if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
-        return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
-    }*/
 
     // Retrieving form elements
     $('#appsubmit, #appsubmit2').each( function() {

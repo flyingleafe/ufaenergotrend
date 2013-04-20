@@ -273,7 +273,15 @@ body
         top: 20%
         display: block
 
+.logo
+  background: url(/img/energotrend-mid.png) top center no-repeat
+  width: 34.5em
+  padding: 15em 0 4em 0
 
+  .slogan
+    font-size: 1.4em
+    font-weight: bold
+    text-align: center
 
 header
   position: relative
@@ -294,15 +302,7 @@ header
         background: url(/img/blur#{$i}-mid.png) top center no-repeat
 
   .logo
-    background: url(/img/energotrend-mid.png) top center no-repeat
-    width: 34.5em
-    padding: 15em 0 4em 0
     float: left
-
-    .slogan
-      font-size: 1.4em
-      font-weight: bold
-      text-align: center
 
   .appform
     width: 25em
@@ -344,8 +344,12 @@ header
     // border-top: 1px solid black
     border-bottom: 1px solid black
 
-.whatwedo
+
+.grid
   background: white url(/img/grid.png)
+
+.whatwedo
+  @extend .grid
   padding-bottom: 1em
 
   .pad
@@ -390,6 +394,25 @@ header
   overflow: hidden
   height: 40em
   +box-shadow(rgba(black, .2) 0 3px 3px)
+  
+  .sectionhead.compact
+    margin-bottom: 1em
+
+  .slides
+    max-width: none !important
+
+  .column50
+    vertical-align: middle
+    margin-bottom: 1em
+    padding: 0 1em 0 1em
+    float: left
+    width: 50%
+    +box-sizing(border-box)
+    text-align: left
+
+  .side-pic
+    float: left
+    margin-right: 1em
 
   big
     font-size: 1.5em
@@ -454,7 +477,7 @@ header
       margin-bottom: 2em
 
     p
-      font-size: 1.6em
+      font-size: 1.4em
       &.big
         font-size: 2em
 
@@ -614,7 +637,7 @@ footer
 
   .content
     padding: 2em
-    +box-shadow($gray 0 -4px 0 0 /*$gray 0 4px 0 0 */)
+    +box-shadow($gray 0 -4px 0 0)
     section
       display: none
       &.active
@@ -630,20 +653,58 @@ footer
   width: auto
   border: none
   font-size: 1.2em
-  padding: 0.2em
+  padding: 0.3em
   margin: 0.8em 0.3em
   +box-shadow(inset rgba(black, .2) 0 0 2px 2px)
   outline: 1px solid $gray
   outline-offset: 0.1em
 
+// maintenance
+.maintenance
+  background: url(/img/dev_back.jpg)
+  +background-size(cover)
+  width: 100%
+  height: 100%
+  .adminlogin
+    background: url(/img/user-mid.png) top left no-repeat
+    padding: 0 0 0.5em 35px
+    a
+      color: $blue
+  .logo
+    margin: 0 auto
+  .sectionhead
+    margin-top: 0
+  .container
+    overflow: hidden
+    padding: 0 2.5em 1em
+    border-bottom: 7px solid $gray
+    +box-shadow(0 0 5px 1px rgba(black, .2))
+    .column50
+      +box-sizing(border-box)
+      width: 50%
+      float: left
+    p
+      padding-top: 0.5em
+      font-size: 1.5em
+    .appwrap
+      height: 13em
+      border-left: 1px solid $gray
+      text-align: center
+      padding: 0 6em 0
+      .appform, .thankyou
+        padding-bottom: 2em
+        position: relative
+      .thankyou
+        display: none
+
 @media only screen and (min-width: 1400px) 
   body
     font-size: 1em
 
-  header
-    .logo
-      background-image: url(/img/energotrend.png)
+  .logo
+    background-image: url(/img/energotrend.png)
 
+  header
     .blur
       @for $i from 1 through 4
         &.b#{$i}
@@ -667,3 +728,5 @@ footer
 
   .container
     width: 1200px
+  .maintenance .adminlogin
+    background: url(/img/user.png) top left no-repeat

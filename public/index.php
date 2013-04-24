@@ -57,6 +57,16 @@ if(F3::get('COOKIE.login')) {
 	$auth = attempt($name, $pw, true);
 }
 
+///////////////////////////
+// Additional parameters //
+///////////////////////////
+
+F3::set('pagenames', array(
+	'blog' 		=> 'Блог',
+	'contacts' 	=> 'Контакты',
+	'about' 	=> 'О нас',
+));
+
 ////////////
 // Routes //
 ////////////
@@ -64,10 +74,10 @@ if(F3::get('COOKIE.login')) {
 F3::route('GET /',
 	function() {
 		if( !F3::get('IN_DEV') or F3::get('USER') ) {
-			F3::set('content', 'main.html');
+			F3::set('content', 'main');
 			F3::set('users', F3::get('DB')->exec("SELECT * FROM ".DB_USERS_TABLE.";"));
 		} else {
-			F3::set('content', 'maintenance.html');
+			F3::set('content', 'maintenance');
 		}
 		echo Template::instance()->render('index.html');
 	}
@@ -76,8 +86,8 @@ F3::route('GET /',
 F3::route('GET /@page',
 	function () {
 		$page = F3::get('PARAMS.page');
-		if( file_exists("page.$page.html") and !F3::get('IN_DEV') ) {
-			F3::set('content', "page.$page.html");
+		if( file_exists("../ui/page.$page.html") and ( !F3::get('IN_DEV') or F3::get('USER') ) ) {
+			F3::set('content', "$page");
 			echo Template::instance()->render('index.html');
 		} else {
 			header("HTTP/1.0 404 Not Found");
@@ -108,7 +118,7 @@ F3::route('POST /newapp',
 					F3::get('to_email'),
 					F3::get('mail_subject'),
 					Template::instance()->render('appmail.html', 'text/html'),
-					"Content-type: text/html; charset=UTF-8\nReply-To: ".F3::get('from_email')."\nFrom: ".F3::get('from_email')
+					"Content-type: text/html; charset=UTF-8\nTo: ".F3::get('to_email')."\nReply-To: ".F3::get('from_email')."\nFrom: ".F3::get('from_email')
 				);
 			}
 

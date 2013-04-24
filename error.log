@@ -965,3 +965,971 @@ PHP message: - /srv/projects/energotrend/public/index.php:112 mail(array(0=>'fly
 Reply-To: Сайт ООО Уфаэнерготренд' . "
 PHP message: - /srv/projects/energotrend/lib/base.php:984 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
 PHP message: - /srv/projects/energotrend/public/index.php:202 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "POST /newapp HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/21 15:22:15 [error] 1698#0: *7 FastCGI sent in stderr: "PHP message: mail() expects parameter 1 to be string, array given
+PHP message: - /srv/projects/energotrend/public/index.php:112 mail(array(0=>'post@ufaenergotrend.ru',1=>'flyingleafe@gmail.com'),'Новая заявка на заключение контракта','<html>
+    <head>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border: 1px solid #c3c3c3; 
+            }
+        </style>
+    </head>
+    <body>
+
+        <p>Новая заявка на заключение контракта:</p>
+
+        <table>
+            <tr>
+                <td>Имя</td>
+                <td>ffwerf</td>
+            </tr>
+            <tr>
+                <td>Телефон или e-mail</td>
+                <td>ff@t.co</td>
+            </tr>
+        </table>    
+
+    </body>
+</html>
+','Content-type: text/html; charset=UTF-8
+Reply-To: Сайт ООО Уфаэнерготренд' . "
+PHP message: - /srv/projects/energotrend/lib/base.php:984 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:202 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "POST /newapp HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/21 15:30:16 [error] 1698#0: *24 FastCGI sent in stderr: "PHP message: Array to string conversion
+PHP message: - /srv/projects/energotrend/public/index.php:111 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:984 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:202 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "POST /newapp HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/22 17:28:14 [error] 1733#0: *23 FastCGI sent in stderr: "PHP message: Undefined index: page.blog.html
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:21 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/22 17:28:42 [error] 1733#0: *23 FastCGI sent in stderr: "PHP message: Undefined index: page.contacts.html
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:21 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/22 17:30:12 [error] 1731#0: *39 FastCGI sent in stderr: "PHP message: Use of undefined constant page - assumed 'page'
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/22 17:30:59 [error] 1731#0: *39 FastCGI sent in stderr: "PHP message: Undefined index: main.html
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:21 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/"
+2013/04/22 17:31:01 [error] 1731#0: *39 FastCGI sent in stderr: "PHP message: Undefined index: main.html
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:21 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:31:19 [error] 1731#0: *39 FastCGI sent in stderr: "PHP message: Use of undefined constant page - assumed 'page'
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:31:20 [error] 1731#0: *39 FastCGI sent in stderr: "PHP message: Use of undefined constant page - assumed 'page'
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:32:31 [error] 1731#0: *53 FastCGI sent in stderr: "PHP message: Unable to open pagemainhtml
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Template->render('pagemainhtml','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.13.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:32:33 [error] 1731#0: *58 FastCGI sent in stderr: "PHP message: Unable to open pagemainhtml
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Template->render('pagemainhtml','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.13.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:32:34 [error] 1731#0: *55 FastCGI sent in stderr: "PHP message: Unable to open pagemainhtml
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Template->render('pagemainhtml','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.13.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:32:53 [error] 1731#0: *58 FastCGI sent in stderr: "PHP message: Unable to open page.main.html
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Template->render('page.main.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.13.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:32:54 [error] 1731#0: *55 FastCGI sent in stderr: "PHP message: Unable to open page.main.html
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:36 Template->render('page.main.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.13.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/22 17:33:52 [error] 1731#0: *66 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:41 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.14.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:33:56 [error] 1731#0: *66 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:41 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.15.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi:
+2013/04/22 17:33:59 [error] 1731#0: *66 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:41 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.16.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /about HTTP/1.1", upstream: "fastcgi
+2013/04/22 17:34:06 [error] 1731#0: *66 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:41 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:22 [error] 1731#0: *74 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:23 [error] 1731#0: *77 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:32 [error] 1731#0: *79 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:33 [error] 1731#0: *77 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:33 [error] 1731#0: *79 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:34 [error] 1731#0: *77 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:42:59 [error] 1731#0: *79 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:43:01 [error] 1731#0: *77 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:44:22 [error] 1731#0: *88 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:44:27 [error] 1731#0: *90 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.17.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:45:08 [error] 1731#0: *92 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.18.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi:
+2013/04/22 17:45:12 [error] 1731#0: *92 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fast
+2013/04/22 17:46:30 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:46:35 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:46:56 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:22 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:23 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:24 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:24 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:25 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:25 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:26 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:28 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:28 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:29 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:29 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:29 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:30 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:30 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:30 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:31 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:31 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:43 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:44 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:44 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:45 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:45 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.19.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:47:51 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:48:20 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:48:35 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:48:36 [error] 1731#0: *102 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:48:37 [error] 1731#0: *107 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:48:37 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:49:25 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:49:35 [error] 1731#0: *104 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:50:27 [error] 1731#0: *105 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:52:51 [error] 1732#0: *155 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:53:30 [error] 1732#0: *159 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:53:31 [error] 1732#0: *157 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:20 [error] 1732#0: *158 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:20 [error] 1732#0: *159 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:21 [error] 1732#0: *157 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:21 [error] 1732#0: *155 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:22 [error] 1732#0: *158 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:22 [error] 1732#0: *159 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:54:23 [error] 1732#0: *157 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:55:48 [error] 1732#0: *172 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:56:26 [error] 1732#0: *172 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:56:34 [error] 1732#0: *179 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:56:34 [error] 1732#0: *176 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:57:07 [error] 1732#0: *175 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/contacts','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(non...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi
+2013/04/22 17:57:08 [error] 1732#0: *175 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:57:49 [error] 1732#0: *175 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:59:40 [error] 1732#0: *192 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:59:48 [error] 1732#0: *197 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 17:59:49 [error] 1732#0: *196 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/contacts','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(non...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi
+2013/04/22 17:59:51 [error] 1732#0: *196 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:02:10 [error] 1732#0: *202 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.20.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:02:18 [error] 1732#0: *207 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.21.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi
+2013/04/22 18:06:27 [error] 1732#0: *212 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '{' in /srv/projects/energotrend/public/tmp/0y8d3oc.1eqehfq.php on line 11
+PHP message: Fatal error: syntax error, unexpected '{'
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1eqehfq.php:11" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev", referrer: "http://et.dev/contacts"
+2013/04/22 18:06:49 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.23.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi
+2013/04/22 18:06:51 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.24.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:07:33 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.25.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:07:49 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/contacts','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.25.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(non...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /about HTTP/1.1", upstream: "fastcg
+2013/04/22 18:07:50 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.25.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:07:51 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/contacts','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.25.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(non...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /blog HTTP/1.1", upstream: "fastcgi
+2013/04/22 18:07:52 [error] 1732#0: *221 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.25.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:31:24 [error] 1734#0: *275 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmb=229792328.26.10.1366628625; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 18:40:00 [error] 1734#0: *277 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Cache-Control'=>'max-age=0','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP'=>'12...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/22 22:30:41 [error] 1734#0: *283 FastCGI sent in stderr: "PHP message: Undefined variable: users
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php:37 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1fyema8.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:40 Template->render('panel.html','text/html',array('AJAX'=>false,'AUTOLOAD'=>'./','BASE'=>'','BODY'=>'','CACHE'=>false,'CASELESS'=>true,'DEBUG'=>3,'DIACRITICS'=>array(),'ENCODING'=>'UTF-8','ERROR'=>NULL,'ESCAPE'=>true,'HEADERS'=>array('Host'=>'et.dev','Connection'=>'keep-alive','Accept'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','User-Agent'=>'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.97 Safari/537.22','Referer'=>'http://et.dev/','Accept-Encoding'=>'gzip,deflate,sdch','Accept-Language'=>'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4','Accept-Charset'=>'windows-1251,utf-8;q=0.7,*;q=0.3','Cookie'=>'login=admin; pw=6d6a13350e5392c68c98d33725dd83076fa947a7bc4aad5ed662f6687c587ad0; __utma=229792328.1313081151.1356794576.1366543287.1366628625.141; __utmc=229792328; __utmz=229792328.1356794576.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'),'IP'=>'127.0.0.1','JAR'=>array('expire...
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:91 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET /contacts HTTP/1.1", upstream: "fas
+2013/04/23 19:14:32 [error] 1702#0: *152 FastCGI sent in stderr: "PHP message: Undefined index: maintenance
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:21 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/23 19:14:38 [error] 1702#0: *152 FastCGI sent in stderr: "PHP message: Undefined index: maintenance
+PHP message: - /srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php:21 Base->{closure}
+PHP message: - /srv/projects/energotrend/lib/base.php:1619 require('/srv/projects/energotrend/public/tmp/0y8d3oc.1epn9ba.php')
+PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
+PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
+PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
+PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"

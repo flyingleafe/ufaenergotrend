@@ -6,16 +6,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>ООО "Уфаэнерготренд" - комплексные решения проблем энергосбережения</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/reveal.css">
+        <?php if ($content == 'main' or $content === 'maintenance'): ?>
+            
+                <title>ООО "Уфаэнерготренд" - комплексные решения проблем энергосбережения</title>
+                <link rel="stylesheet" href="css/reveal.css">
+            
+            <?php else: ?>
+                <title><?php echo $pagenames[$content]; ?> - ООО "Уфаэнерготренд"</title>
+            
+        <?php endif; ?>
         <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <!-- <link rel="stylesheet" href="css/main.css"> -->
         <link rel="stylesheet" href="css/screen.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -26,7 +32,7 @@
 
         <!-- Add your site or application content here -->
 
-        <?php echo $this->render($content,$this->mime,get_defined_vars()); ?>
+        <?php echo $this->render('page.'.$content.'.html',$this->mime,get_defined_vars()); ?>
 
         <!-- Admin panel -->
         <?php if ($USER && $USER->login): ?>

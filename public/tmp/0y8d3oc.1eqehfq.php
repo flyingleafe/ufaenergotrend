@@ -1,8 +1,20 @@
 <nav class="top-menu">
     <ul>
-        <li><a href="/blog">Блог</a></li>
-        <li><a href="/about">О компании</a></li>
-        <li><a href="/contacts">Контакты</a></li>
+        <?php if ($content !== 'main'): ?>
+                
+                    <li><a href="/">Главная</a></li>        
+                
+            <?php endif; ?>
+        <?php foreach ((array_keys($pagenames)?:array()) as $name): ?>
+            <?php if ($content !== $name): ?>
+                
+                    <li><a href="<?php echo '/'.$name; ?> "><?php echo $pagenames[$name]; ?></a></li>        
+                
+            <?php endif; ?>
+        <?php endforeach; ?>
+       <!--  <li><a href="/blog">Блог</a></li>
+       <li><a href="/about">О компании</a></li>
+       <li><a href="/contacts">Контакты</a></li> -->
         <div class="clearfix"></div>
     </ul>
     <?php if ($USER && $USER->login): ?>

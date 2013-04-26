@@ -87,7 +87,52 @@
                 </div>
             </section>
             <section>
-                
+                <h1 class="sectionhead compact"><span>Схема финансирования</span></h1>
+                <div class="column50">
+                    <div class="well fragment">Энергосервисная компания финансирует и реализует проект «под ключ»</div>
+                </div>
+                <div class="column50">
+                    <div class="well fragment">
+                        <div class="rarr"></div>
+                        Клиент осуществляет платежи из суммы экономии от энергосбережения
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="scheme">
+                    <table class="fragment">
+                        <tr>
+                            <td colspan="2" class="top">
+                                <img class="icon" src="/img/brand.png" alt='ООО "Уфаэнерготренд"' title='ООО "Уфаэнерготренд"'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="icon" src="/img/user.png" alt="Клиент">
+                                Клиент
+                            </td>
+                            <td class="sec">
+                                <img class="icon" src="/img/tools.png" alt="Клиент" style="margin-bottom: 0.5em;">
+                                <div class="in-bl">Поставщики и<br>подрядчики</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="fragment">
+                        <div class="fly tip n1" style="top: 9em; left: 2em">Энергосервисный контракт</div>
+                        <img class="fly" style="top: 6em; left: 12em" src="/img/carr-left.png" alt="">
+                    </div>
+                    <div class="fragment">
+                        <div class="fly tip n2" style="top: 9em; right: 2em">Финансирование работ</div>
+                        <img class="fly" style="top: 5.5em; right: 12em" src="/img/carr-right.png" alt="">
+                    </div>
+                    <div class="fragment">
+                        <div class="fly tip n3" style="left: 44%; bottom: 0.7em">Реализация проекта</div>
+                        <img class="fly" style="bottom: 0.7em; left: 43%" src="/img/carr-bot.png" alt="">
+                    </div>
+                    <div class="fragment">
+                        <div class="fly tip n4" style="left: 40%; top: 40%; width: 13em;">Оплата за проведение энергоэффективного мероприятия</div>
+                        <img class="fly" style="top: 6em; left: 12em" src="/img/carr-left2.png" alt="">
+                    </div>
+                </div>
             </section>
         </div>
     </div>
@@ -95,11 +140,11 @@
 <div class="whywe">
     <div class="container">
         <h1 class="sectionhead"><span>Почему мы?</span></h1>
-        <p class="big">У нас есть огромный практический опыт работы в сфере энергетики</p>
+        <p class="big">Мы обладаем огромным практическим опытом работы в сфере энергетики</p>
         <div class="dot-divide"></div>
-        <p class="big">Наша команда - гениальные финансисты</p>
-        <div class="dot-divide"></div>
-        <p class="big">Мы напрямую работаем с поставщиками оборудования</p>
+        <p class="big">Мы работаем в тесном контакте с финансово-кредитными организациями и поставщиками оборудования</p>
+        <!-- <div class="dot-divide"></div>
+        <p class="big">Мы напрямую работаем с поставщиками оборудования</p> -->
     </div>
 </div>
 
@@ -174,11 +219,6 @@
         // Optional libraries used to extend on reveal.js
         dependencies: [
             { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
     });
 

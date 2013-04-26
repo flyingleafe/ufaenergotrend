@@ -1933,3 +1933,4 @@ PHP message: - /srv/projects/energotrend/lib/template.php:309 View->sandbox()
 PHP message: - /srv/projects/energotrend/public/index.php:82 Template->render('index.html')
 PHP message: - /srv/projects/energotrend/lib/base.php:972 Base->call(Closure::__set_state(),NULL,'beforeroute,afterroute')
 PHP message: - /srv/projects/energotrend/public/index.php:212 F3::run()" while reading response header from upstream, client: 127.0.0.1, server: et.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "et.dev"
+2013/04/26 20:49:48 [error] 1727#0: *214 open() "/srv/projects/energotrend/public/img/user,png" failed (2: No such file or directory), client: 127.0.0.1, server: et.dev, request: "GET /img/user,png HTTP/1.1", host: "et.dev", referrer: "http://et.dev/"

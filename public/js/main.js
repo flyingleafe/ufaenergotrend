@@ -248,7 +248,6 @@ $(function() {
             callbacks: {
                 onenteractive: Reveal.addEventListeners,
                 onleaveactive: Reveal.removeEventListeners,
-                onchangestate: function() { console.log( this.current ) }
             }
         });
 
@@ -270,6 +269,18 @@ $(function() {
         }
 
     });
+
+    ///////////////////////
+    // Fragment autoplay //
+    ///////////////////////
+    var frtm = null,
+        frdelay = 1000;
+    function autoshow() {
+        clearTimeout(frtm);
+        frtm = setTimeout(Reveal.nextFragment, frdelay);
+    }
+    Reveal.addEventListener( 'slidechanged', autoshow );
+    Reveal.addEventListener( 'fragmentshown', autoshow ); 
 
     /////////////////////////
     // Login form handling //

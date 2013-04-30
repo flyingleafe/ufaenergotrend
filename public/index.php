@@ -23,7 +23,7 @@ if (function_exists('apache_get_modules') &&
 
 F3::set('DEBUG',3);
 F3::set('UI','../ui/');
-F3::set('IN_DEV', fa;se); // в разработке или запущен
+F3::set('IN_DEV', false); // в разработке или запущен
 
 ///////////////////
 // Mail settings //

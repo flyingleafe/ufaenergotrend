@@ -38,6 +38,7 @@
         <?php if ($USER && $USER->login): ?>
             
                 <?php echo $this->render('panel.html',$this->mime,get_defined_vars()); ?>
+                <script src="/js/panel.js" type="text/javascript"></script>
             
         <?php endif; ?>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

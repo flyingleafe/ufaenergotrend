@@ -134,6 +134,94 @@
                     </div>
                 </div>
             </section>
+            <section data-state="wideslide">
+                <h1 class="sectionhead" style="margin-bottom: 0.3em;"><span>Пример проекта</span></h1>
+                <p>Что произойдет, если вы подпишете энергосервисный контракт с нами прямо сейчас.</p>
+                <div class="container fragment" style="margin-top: 3em;" data-fragment-index="1">
+                    <div class="timeline">
+                        <div class="column33 period">
+                            &larr; раньше
+                        </div>
+                        <div class="column33 period">
+                            <div class="corner fragment" data-fragment-index="3">
+                                <span class="mark">Подписание контракта с ООО "Уфаэнерготренд"</span>
+                            </div>
+                            3 года после подписания контракта
+                        </div>
+                        <div class="column33 period">
+                            в дальнейшем &rarr;
+                        </div>
+                        <div class="ticks" id="ticks">
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                            <div class="tick"></div>
+                        </div>
+                    </div>
+                    <div class="periods">
+                        <div class="column33 period">
+                            <table class="diagram fragment" data-fragment-index="2">
+                                <tr>
+                                    <td class="bar">
+                                        <div class="red"></div>
+                                        <p><big>10</big> млн. руб.</p>
+                                    </td>
+                                    <td class="amount">Ваши затраты на энергию</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="column33 period">
+                            <table class="diagram fragment" data-fragment-index="4">
+                                <tr>
+                                    <td class="bar">
+                                        <div class="green"></div>
+                                        <p><big>1</big> млн. руб.</p>
+                                    </td>
+                                    <td class="amount">Ваша доля экономии</td>
+                                </tr>
+                                <tr style="height: 40%;">
+                                    <td class="bar">
+                                        <div class="yellow"></div>
+                                        <p><big>4</big> млн. руб.</p>
+                                    </td>
+                                    <td class="amount">Выплаты энергосервисной компании.</td>
+                                </tr>
+                                <tr style="height: 50%;">
+                                    <td class="bar">
+                                        <div class="red"></div>
+                                        <p><big>5</big> млн. руб.</p>
+                                    </td>
+                                    <td class="amount">Ваши затраты на энергию</td>
+                                </tr>
+                            </table>
+                            <p class="notice fragment" data-fragment-index="5">Вы экономите <strong>1 млн. рублей ежегодно</strong> в течение трех лет.</p>
+                        </div>
+                        <div class="column33 period">
+                            <table class="diagram fragment" data-fragment-index="6">
+                                <tr>
+                                    <td class="bar">
+                                        <div class="green"></div>
+                                        <p><big>5</big> млн. руб.</p>
+                                    </td>
+                                    <td class="amount">Ваша доля экономии</td>
+                                </tr>
+                                <tr style="height: 50%;">
+                                    <td class="bar">
+                                        <div class="red"></div>
+                                        <p><big>5</big> млн. руб.</p>
+                                    </td>
+                                    <td class="amount">Ваши затраты на энергию</td>
+                                </tr>
+                            </table>
+                            <p class="notice fragment" data-fragment-index="7">Вы экономите <strong>5 млн. руб. ежегодно</strong> в дальнейшем.<br>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </div>
@@ -194,8 +282,6 @@
 
 <?php echo $this->render('footer.html',$this->mime,get_defined_vars()); ?>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 <script src="js/vendor/jquery.color.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
@@ -207,7 +293,7 @@
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-        width: 1000,
+        width: 1200,
         controls: true,
         progress: true,
         history: false,
@@ -223,5 +309,9 @@
     });
 
     Reveal.removeEventListeners();
+
+    $('#ticks').children().each(function (i) {
+        $(this).html('<span>201' + (i+1) + '</span>');
+    });
 
 </script>

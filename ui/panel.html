@@ -47,3 +47,4 @@
         </div>
     </div>
 </div>
+<script src="/js/panel.js" type="text/javascript"></script>

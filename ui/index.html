@@ -24,6 +24,8 @@
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/screen.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
     </head>
     <body class="screen">
         <!--[if lt IE 7]>
@@ -38,7 +40,6 @@
         <check if="{{ @USER && @USER->login }}">
             <true>
                 <include href="panel.html" />
-                <script src="/js/panel.js" type="text/javascript"></script>
             </true>
         </check>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -55,6 +55,9 @@ if(F3::get('COOKIE.login')) {
 	$name = F3::get('COOKIE.login');
 	$pw = F3::get('COOKIE.pw');
 	$auth = attempt($name, $pw, true);
+	if($auth) {
+		F3::set('users', F3::get('DB')->exec("SELECT * FROM ".DB_USERS_TABLE.";"));
+	}
 }
 
 ///////////////////////////
@@ -75,7 +78,6 @@ F3::route('GET /',
 	function() {
 		if( !F3::get('IN_DEV') or F3::get('USER') ) {
 			F3::set('content', 'main');
-			F3::set('users', F3::get('DB')->exec("SELECT * FROM ".DB_USERS_TABLE.";"));
 		} else {
 			F3::set('content', 'maintenance');
 		}

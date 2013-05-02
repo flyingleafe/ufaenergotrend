@@ -91,6 +91,8 @@ body
     float: left
   .column30
     width: 30%
+  .column33
+    width: 33%
   .column50
     width: 50%
   .column70
@@ -421,7 +423,7 @@ header
       margin-top: 3em
 
 .howitworks
-  font-size: 1.1em
+  font-size: 1.2em
   position: relative
   padding-top: 1px
   background-color: lighten($blue, 12%)
@@ -431,7 +433,9 @@ header
   +box-shadow(rgba(black, .2) 0 3px 3px)
   
   .slides
-    max-width: 1000px !important
+    max-width: 900px !important
+    .wideslide &
+      max-width: 960px !important
 
   .sectionhead.compact
     margin-bottom: 1em
@@ -553,8 +557,99 @@ header
       &.n4::before
         background-color: $yellow
         content: '4'
+
+  .timeline
+    position: relative
+    @extend .clearfix
+    color: darken($gray, 40%)
+    border-bottom: 5px solid rgba(black, .4)
+    .corner
+      position: absolute
+      top: -2em
+      left: 0
+      .mark
+        background: rgba(white, .5)
+        +box-shadow(rgba(white, .5) 0 0 20px 10px)
+        color: black
+        position: relative
+        left: -50%
+        border-bottom: 1px solid rgba(black, .4)
+        &::before
+          content: ''
+          position: absolute
+          left: 50%
+          top: 100%
+          margin: 1px 0 0 -10px
+          width: 0
+          height: 0
+          border: 10px solid transparent
+          border-top-color: rgba(black, .4)
+    .ticks
+      position: absolute
+      bottom: -3px
+      width: 100%
+      height: 14px
+      .tick
+        position: relative
+        background-color: rgba(black, .4)
+        @extend .in-bl
+        width: 2px
+        height: 100%
+        margin-right: 11%
+        span
+          position: absolute
+          top: 20px
+          left: -23px
+          width: 50px
+
+    .period
+      padding: 0.5em 0 1em
+  .diagram
+    position: relative
+    width: 100%
+    height: 18em
+    td
+      position: relative
+      vertical-align: middle
+      &.bar
+        text-align: center
+        width: 40%
+        div
+          +single-transition(height 1s ease)
+          z-index: -1
+          position: absolute
+          bottom: 0
+          width: 70%
+          height: 0
+          margin-left: 15%
+          +box-shadow(1px 1px 1px 1px, 2px 2px 1px 1px, 3px 3px 1px 1px, 4px 4px 1px 1px, 5px 5px 1px 1px)
+          &.red
+            background: $red
+            color: desaturate(darken($red, 20%), 40%)
+          &.yellow
+            background: $yellow
+            color: darken($yellow, 30%)
+          &.green
+            background: $green
+            color: darken($green, 30%)
+        p
+          padding: 0 20% 0 20%
+          margin: 0
+          font-size: 0.8em
+      &.amount
+        text-decoration: underline
+    &.visible td.bar div
+      height: 100%
+
+  .period
+    position: relative
+    padding: 3em 0 0 0
+    margin-bottom: -4px
+    border-left: 1px dashed darken($gray, 40%)
+    &:first-child
+      border-left: none
   big
-    font-size: 1.5em
+    font-size: 1.7em
 
   .container
     height: 100%
@@ -572,7 +667,6 @@ header
       height: 100%
 
       div
-
         z-index: 20
         border: none
         position: absolute
@@ -885,6 +979,12 @@ footer
       &:hover
         +background-image(url(/img/enter.png), linear-gradient(lighten($gray, 16%), lighten($gray, 11%)) )
 
+  .howitworks
+    font-size: 1.1em
+    .slides
+      max-width: 1000px !important
+      .wideslide &
+        max-width: 1200px !important
   .conclusion
     background-image: url(/img/scyscrapers.png)
 

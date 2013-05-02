@@ -6,10 +6,10 @@
     <div class="container grid">
         <h1 class="sectionhead compact"><span>Блог компании</span></h1>
         <div class="column70">
-            efvgef
+            Здесь будут записи блога.
         </div>
         <div class="column30">
-            erer
+            А здесь окажется сайдбар.
         </div>
     </div>
 </div>

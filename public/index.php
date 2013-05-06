@@ -98,7 +98,8 @@ F3::route('GET /blog/@id',
 	function() {
 		$id = F3::get('PARAMS.id');
 		F3::set('content', 'post');
-		F3::set('post', F3::set('post', F3::get('DB')->exec("SELECT * FROM ".DB_POSTS_TABLE." WHERE id=".$id." ORDER BY created_at DESC;")[0]));
+		$post = F3::get('DB')->exec("SELECT * FROM ".DB_POSTS_TABLE." WHERE id=".$id." ORDER BY created_at DESC;");
+		F3::set('post', $post[0]);
 		echo Template::instance()->render('index.html');
 	}
 );

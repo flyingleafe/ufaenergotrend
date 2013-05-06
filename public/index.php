@@ -228,7 +228,8 @@ F3::route('POST /newpost',
 		$success = $post->save();
 		echo json_encode(
 			array(
-				'success' => !!$success
+				'success' => !!$success,
+				'params' => F3::get('POST')
 			)
 		);
 	}

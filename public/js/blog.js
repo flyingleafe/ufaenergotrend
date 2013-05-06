@@ -31,6 +31,7 @@ addform.submit(function(e) {
         postsContainer.prepend(applyTemplate(postLayout, data));
         $('.wysihtml5-sandbox').contents().find('body').html('');
         addform.find('input').val('');
+        console.log(response);
     }, "json");
 });
 postDeleteBtns.click(function() {

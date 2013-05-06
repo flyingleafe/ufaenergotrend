@@ -21,6 +21,12 @@
                 <title>{{ @pagenames[@content] }} - ООО "Уфаэнерготренд"</title>
             </false>
         </check>
+        <check if="{{ @content == 'blog' and @USER and @USER->login }}">
+            <true>
+                <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>
+                <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>
+            </true>
+        </check>
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/screen.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>

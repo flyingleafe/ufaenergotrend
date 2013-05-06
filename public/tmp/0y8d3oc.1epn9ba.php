@@ -21,6 +21,12 @@
                 <title><?php echo $pagenames[$content]; ?> - ООО "Уфаэнерготренд"</title>
             
         <?php endif; ?>
+        <?php if ($content == 'blog' and $USER and $USER->login): ?>
+            
+                <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>
+                <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>
+            
+        <?php endif; ?>
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/screen.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>

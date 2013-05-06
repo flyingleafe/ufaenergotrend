@@ -85,6 +85,14 @@ F3::route('GET /',
 	}
 );
 
+F3::route('GET /blog',
+	function() {
+		F3::set('content', 'blog');
+		F3::set('posts', F3::get('DB')->exec("SELECT * FROM ".DB_POSTS_TABLE." ORDER BY created_at DESC;"));
+		echo Template::instance()->render('index.html');
+	}
+);
+
 F3::route('GET /@page',
 	function () {
 		$page = F3::get('PARAMS.page');
@@ -206,6 +214,21 @@ F3::route('POST /login',
 				'success' 	=> $auth,
 				'login' 	=> $login,
 				'pw'		=> $pw
+			)
+		);
+	}
+);
+
+F3::route('POST /newpost',
+	function() {
+		$post = new DB\SQL\Mapper(F3::get('DB'), DB_POSTS_TABLE);
+		$post->title 	= F3::get('POST.title');
+		$post->subtitle	= F3::get('POST.subtitle');
+		$post->content	= F3::get('POST.content');
+		$success = $post->save();
+		echo json_encode(
+			array(
+				'success' => !!$success
 			)
 		);
 	}

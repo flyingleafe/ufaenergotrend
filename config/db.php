@@ -34,5 +34,3 @@ define('DB_FEEDBACK_TABLE', 'feedback');
 
 // Posts table
 define('DB_POSTS_TABLE', 'posts');
-
-

@@ -17,3 +17,15 @@ function attempt($login, $pw, $hashed = false) {
     }
     return false;
 }
+
+function dateParse($timestamp) {
+    $period = time() - $timestamp;
+    $days_passed = ($period - $period % 86400) / 86400;
+    if($days_passed == 0) {
+        return "сегодня в ".date('H:i', $timestamp);
+    } else if($days_passed == 1) {
+        return "вчера в ".date('H:i', $timestamp);
+    } else {
+        return date('j.m.Y в H:i', $timestamp);
+    }
+}

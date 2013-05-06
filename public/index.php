@@ -234,4 +234,17 @@ F3::route('POST /newpost',
 	}
 );
 
+F3::route('POST /delpost/@id',
+	function() {
+		$post = new DB\SQL\Mapper(F3::get('DB'), DB_POSTS_TABLE);
+		$post->load(array('id=?', F3::get('PARAMS.id')));
+		$success = $post->erase();
+		echo json_encode(
+			array(
+				'success' => !!$success
+			)
+		);
+	}
+);
+
 F3::run();

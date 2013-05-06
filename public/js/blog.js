@@ -13,7 +13,10 @@ var addtriggers     = $('.add-toggle-trigger'),
     addcontent      = $('#new-post-content'),
     addform         = $('#new-post'),
     postLayout      = $('#post-layout').html(),
-    postsContainer  = $('#posts-container');
+    postsContainer  = $('#posts-container'),
+    postDeleteBtns  = $('.post-delete'),
+    postEditBtns    = $('.post-edit');
+
 
 addcontent.wysihtml5({locale: "ru-RU"});
 addtriggers.click(function() {
@@ -29,4 +32,12 @@ addform.submit(function(e) {
         $('.wysihtml5-sandbox').contents().find('body').html('');
         addform.find('input').val('');
     }, "json");
-})
+});
+postDeleteBtns.click(function() {
+    var id = $(this).parents('.post-wrapper').data('id');
+    if(confirm("Вы действительно хотите удалить эту запись?")) {
+        $.post('/delpost/' + id, function() {
+            location.reload();
+        });
+    }
+});

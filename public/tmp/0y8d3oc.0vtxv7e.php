@@ -29,7 +29,7 @@
                 
             <?php endif; ?>
             <script type="x-placeholder" id="post-layout">
-                <div class="post-wrapper">
+                <div class="post-wrapper" data-id="{%id%}">
                     <div class="datetime">{%created_at%}</div>
                     <h1 class="post-title"><a href="/blog/{%id%}">{%title%}</a></h1>
                     <h2 class="post-subtitle">{%subtitle%}</h2>
@@ -43,12 +43,12 @@
                     
                     <?php else: ?>
                         <?php foreach (($posts?:array()) as $post): ?>
-                            <div class="post-wrapper">
+                            <div class="post-wrapper" data-id="<?php echo $post['id']; ?>">
                                 <?php if ($USER && $USER->login): ?>
                                     
                                         <div class="controls">
-                                            <button class="btn"><i class="icon-edit"></i> Изменить</button>
-                                            <button class="btn btn-danger"><i class="icon-remove"></i> Удалить</button>
+                                            <button class="btn post-edit"><i class="icon-edit"></i> Изменить</button>
+                                            <button class="btn btn-danger post-delete"><i class="icon-remove"></i> Удалить</button>
                                         </div>
                                     
                                 <?php endif; ?>

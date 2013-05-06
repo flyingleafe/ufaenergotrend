@@ -222,9 +222,9 @@ F3::route('POST /login',
 F3::route('POST /newpost',
 	function() {
 		$post = new DB\SQL\Mapper(F3::get('DB'), DB_POSTS_TABLE);
-		$post->title 	= F3::get('POST.title');
-		$post->subtitle	= F3::get('POST.subtitle');
-		$post->content	= F3::get('POST.content');
+		$post->title 	= htmlspecialchars(F3::get('POST.title'));
+		$post->subtitle	= htmlspecialchars(F3::get('POST.subtitle'));
+		$post->content	= htmlspecialchars(F3::get('POST.content'));
 		$success = $post->save();
 		echo json_encode(
 			array(

@@ -286,7 +286,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+<script src="js/reveal.min.js"></script>
 
 <script>
 
@@ -300,7 +300,7 @@
         center: true,
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+        transition: 'linear', // default/cube/page/concave/zoom/linear/none
 
         // Optional libraries used to extend on reveal.js
         dependencies: [

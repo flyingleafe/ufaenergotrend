@@ -4,9 +4,10 @@
   Import this file using the following HTML or equivalent:
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "main.css"
 @import compass/css3
 @import "ceaser-easing"
+
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic")
 
 $green: #cbe4ab
 $red: #eca7a2
@@ -72,6 +73,7 @@ $almost-white: #EFEFEF
 // Directives
 body *
   font-family: 'PT Sans', sans-serif
+  line-height: 1.4
 
 html, body
   width: 100%
@@ -301,6 +303,8 @@ body
           @extend .hl
           &::before
             content: '✔'
+        &.wrong::before
+          content: '✖'
 
       &.opened
         top: 20%
@@ -684,6 +688,7 @@ header
 
         &.navigate-right
           background-image: url(/img/rarr.png)
+          left: auto
           right: 3em !important
           top: 50%
           margin-top: -35px
@@ -1002,6 +1007,8 @@ footer
   &:hover
     .controls
       display: block
+  &:last-child
+    border: none
 
 .sidebar
   padding-left: 2em

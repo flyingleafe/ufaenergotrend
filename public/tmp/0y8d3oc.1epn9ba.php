@@ -11,25 +11,25 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="/css/normalize.css">
         <?php if ($content == 'main' or $content === 'maintenance'): ?>
             
                 <title>ООО "Уфаэнерготренд" - комплексные решения проблем энергосбережения</title>
-                <link rel="stylesheet" href="css/reveal.css">
+                <link rel="stylesheet" href="css/reveal.min.css">
             
             <?php else: ?>
                 <title><?php echo $pagenames[$content]; ?> - ООО "Уфаэнерготренд"</title>
             
         <?php endif; ?>
-        <?php if ($content == 'blog' and $USER and $USER->login): ?>
+        <?php if (($content == 'blog' or $content == 'post') and $USER and $USER->login): ?>
             
                 <link rel="stylesheet" type="text/css" href="/css/bootstrap-wysihtml5.css"></link>
                 <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"></link>
             
         <?php endif; ?>
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="/css/screen.css">
+        <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
     </head>

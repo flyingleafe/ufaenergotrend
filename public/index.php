@@ -68,6 +68,7 @@ F3::set('pagenames', array(
 	'blog' 		=> 'Блог',
 	'contacts' 	=> 'Контакты',
 	'about' 	=> 'О нас',
+	'post'		=> 'Блог'
 ));
 
 ////////////
@@ -89,6 +90,15 @@ F3::route('GET /blog',
 	function() {
 		F3::set('content', 'blog');
 		F3::set('posts', F3::get('DB')->exec("SELECT * FROM ".DB_POSTS_TABLE." ORDER BY created_at DESC;"));
+		echo Template::instance()->render('index.html');
+	}
+);
+
+F3::route('GET /blog/@id',
+	function() {
+		$id = F3::get('PARAMS.id');
+		F3::set('content', 'post');
+		F3::set('post', F3::set('post', F3::get('DB')->exec("SELECT * FROM ".DB_POSTS_TABLE." WHERE id=".$id." ORDER BY created_at DESC;")[0]));
 		echo Template::instance()->render('index.html');
 	}
 );

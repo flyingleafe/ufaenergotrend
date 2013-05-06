@@ -1,0 +1,26 @@
+<div class="sky-wrapper">
+    <include href="topmenu.html" />
+    <div class="logo">
+        <div class="slogan">Комплексные решения проблем энергосбережения</div>
+    </div>
+    <div class="container grid">
+        <h1 class="sectionhead compact"><span>Блог компании</span></h1>
+        <div class="column70">
+            <include href="single-post.html" />
+        </div>
+        <div class="column30 sidebar">
+            <h2>Свежие записи</h2>
+        </div>
+    </div>
+</div>
+<include href="footer.html" />
+<script src="/js/plugins.js"></script>
+<check if="{{ @USER && @USER->login }}">
+    <true>
+        <script src="/js/wysihtml5-0.3.0.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/bootstrap-wysihtml5.js"></script>
+        <script src="/plugin/bootstrap-wysiwyg/locales/bootstrap-wysihtml5.ru-RU.js"></script>
+        <script src="/js/blog.js"></script>
+    </true>
+</check>

@@ -295,7 +295,6 @@ logform.submit(function(e) {
         'login',
         $(this).serialize(),
         function(data) {
-            console.log(data);
             if(data.success) {
                 submit.addClass('ok');
                 var period = 60*60*24*7;
@@ -304,6 +303,11 @@ logform.submit(function(e) {
                 setTimeout(function() {
                     location.reload();
                 }, 500);
+            } else {
+                submit.addClass('wrong');
+                setTimeout(function() {
+                    submit.removeClass('wrong');
+                }, 1000);
             }
             blinkStop();
         },

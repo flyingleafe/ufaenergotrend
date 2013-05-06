@@ -6,7 +6,7 @@
                 
             <?php endif; ?>
         <?php foreach ((array_keys($pagenames)?:array()) as $name): ?>
-            <?php if ($content !== $name): ?>
+            <?php if ($content !== $name and $name !== 'post'): ?>
                 
                     <li><a href="<?php echo '/'.$name; ?> "><?php echo $pagenames[$name]; ?></a></li>        
                 

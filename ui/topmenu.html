@@ -6,7 +6,7 @@
                 </true>
             </check>
         <repeat group="{{ array_keys(@pagenames) }}" value="{{ @name }}">
-            <check if="{{ @content !== @name }}">
+            <check if="{{ @content !== @name and @name !== 'post' }}">
                 <true>
                     <li><a href="{{ '/'.@name }} ">{{ @pagenames[@name] }}</a></li>        
                 </true>

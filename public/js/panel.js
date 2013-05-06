@@ -1,3 +1,8 @@
+var User = {
+    login: getCookie('login'),
+    pw: getCookie('pw')
+}
+
 //////////////////////////////
 // Control buttons handling //
 //////////////////////////////

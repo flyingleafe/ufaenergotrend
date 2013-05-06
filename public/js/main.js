@@ -8,11 +8,6 @@ $(function() {
         body.removeClass('screen').addClass('mobile');
     }
 
-    var User = {
-        login: getCookie('login'),
-        pw: getCookie('pw')
-    }
-
     /////////////////////
     // Top slider code //
     /////////////////////

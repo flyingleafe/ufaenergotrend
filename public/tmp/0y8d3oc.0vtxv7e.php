@@ -30,6 +30,10 @@
             <?php endif; ?>
             <script type="x-placeholder" id="post-layout">
                 <div class="post-wrapper" data-id="{%id%}">
+                    <div class="controls">
+                        <button class="btn post-edit"><i class="icon-edit"></i> Изменить</button>
+                        <button class="btn btn-danger post-delete"><i class="icon-remove"></i> Удалить</button>
+                    </div>
                     <div class="datetime">{%created_at%}</div>
                     <h1 class="post-title"><a href="/blog/{%id%}">{%title%}</a></h1>
                     <h2 class="post-subtitle">{%subtitle%}</h2>
@@ -50,8 +54,21 @@
             </div>
         </div>
         <div class="column30 sidebar">
-            <h2>Свежие записи</h2>
-            
+            <div class="dash-bd">
+                <h2>Свежие записи:</h2>
+                <?php if (empty($posts)): ?>
+                    
+                        <p class="notice"><em>Нет записей<em></p>
+                    
+                    <?php else: ?>
+                        <ul class="post-list">
+                            <?php foreach (($posts?:array()) as $post): ?>
+                                <li><a href="/blog/<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </div>

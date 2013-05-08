@@ -30,6 +30,10 @@
             </check>
             <script type="x-placeholder" id="post-layout">
                 <div class="post-wrapper" data-id="{%id%}">
+                    <div class="controls">
+                        <button class="btn post-edit"><i class="icon-edit"></i> Изменить</button>
+                        <button class="btn btn-danger post-delete"><i class="icon-remove"></i> Удалить</button>
+                    </div>
                     <div class="datetime">{%created_at%}</div>
                     <h1 class="post-title"><a href="/blog/{%id%}">{%title%}</a></h1>
                     <h2 class="post-subtitle">{%subtitle%}</h2>
@@ -50,8 +54,21 @@
             </div>
         </div>
         <div class="column30 sidebar">
-            <h2>Свежие записи</h2>
-            
+            <div class="dash-bd">
+                <h2>Свежие записи:</h2>
+                <check if="{{ empty(@posts) }}">
+                    <false>
+                        <ul class="post-list" id="post-list">
+                            <repeat group="@posts" value="@post">
+                                <li><a href="/blog/{{ @post.id }}">{{ @post.title }}</a></li>
+                            </repeat>
+                        </ul>
+                    </false>
+                    <true>
+                        <p class="notice"><em>Нет записей<em></p>
+                    </true>
+                </check>
+            </div>
         </div>
     </div>
 </div>

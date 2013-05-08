@@ -195,7 +195,7 @@ body
   position: fixed
   width: 100%
   padding-left: 3em
-  z-index: 30
+  z-index: 40
   top: 0
   left: 0
   color: white
@@ -1012,6 +1012,18 @@ footer
 
 .sidebar
   padding-left: 2em
+  .dash-bd
+    border: 3px dashed $gray
+    padding: 1em
+    +border-radius(15px)
+    h2
+      margin-top: 0
+  .post-list
+    padding: 0
+    list-style-type: none
+    font-size: 1.2em
+    li
+      padding: 0.4em 0
 
 @media only screen and (min-width: 1400px) 
   body

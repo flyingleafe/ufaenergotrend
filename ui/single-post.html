@@ -1,14 +1,36 @@
 <div class="post-wrapper" data-id="{{ @post.id }}">
-    <check if="{{ @USER && @USER->login }}">
+    <check if="{{ isset(@GET.edit) and @content == 'post' }}">
         <true>
-            <div class="controls">
-                <button class="btn post-edit"><i class="icon-edit"></i> Изменить</button>
-                <button class="btn btn-danger post-delete"><i class="icon-remove"></i> Удалить</button>
-            </div>
+            <h2>Редактирование записи</h2>
+            <button onclick="history.go(-1)" class="btn add-toggle-trigger"><i class="icon-remove"></i> Отмена</button>
+            <form action="/updatepost/{{ @post.id }}" id="update-post" method="POST">
+                <p class="blog-inputwrap">
+                    <input type="text" name="title" class="title" placeholder="Заголовок" value="{{ @post.title }}" required>
+                </p>
+                <p class="blog-inputwrap">
+                    <input type="text" name="subtitle" class="subtitle" placeholder="Подзаголовок" value="{{ @post.subtitle }}">
+                </p>
+                <div class="content-field-wrap">
+                    <textarea name="content" id="new-post-content" cols="30" rows="10" class="content" placeholder="Тело записи..." required>
+                        {{ @post.content }}
+                    </textarea>
+                </div>
+                <button class="btn btn-success"><i class="icon-ok"></i> Изменить</button>
+            </form>
         </true>
+        <false>
+            <check if="{{ @USER && @USER->login }}">
+                <true>
+                    <div class="controls">
+                        <a href="/blog/{{ @post.id }}?edit=1" class="btn post-edit"><i class="icon-edit"></i> Изменить</a href="/blog/{{ @post.id }}?edit=1">
+                        <button class="btn btn-danger post-delete"><i class="icon-remove"></i> Удалить</button>
+                    </div>
+                </true>
+            </check>
+            <div class="datetime">{{ dateParse(strtotime(@post.created_at)) }}</div>
+            <h1 class="post-title"><a href="/blog/{{ @post.id }}">{{ @post.title }}</a></h1>
+            <h2 class="post-subtitle">{{ @post.subtitle }}</h2>
+            <div class="post-content">{{ htmlspecialchars_decode(@post.content) | raw }}</div>
+        </false>
     </check>
-    <div class="datetime">{{ dateParse(strtotime(@post.created_at)) }}</div>
-    <h1 class="post-title"><a href="/blog/{{ @post.id }}">{{ @post.title }}</a></h1>
-    <h2 class="post-subtitle">{{ @post.subtitle }}</h2>
-    <div class="post-content">{{ htmlspecialchars_decode(@post.content) | raw }}</div>
 </div>

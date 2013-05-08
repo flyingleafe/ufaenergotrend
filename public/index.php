@@ -259,4 +259,21 @@ F3::route('POST /delpost/@id',
 	}
 );
 
+F3::route('POST /updatepost/@id',
+	function() {
+		$post = new DB\SQL\Mapper(F3::get('DB'), DB_POSTS_TABLE);
+		$post->load(array('id=?', F3::get('PARAMS.id')));
+		$post->title 	= htmlspecialchars(F3::get('POST.title'));
+		$post->subtitle	= htmlspecialchars(F3::get('POST.subtitle'));
+		$post->content	= htmlspecialchars(F3::get('POST.content'));
+		$success = $post->save();
+		echo json_encode(
+			array(
+				'success' => !!$success,
+				'params' => F3::get('POST')
+			)
+		);
+	}
+);
+
 F3::run();

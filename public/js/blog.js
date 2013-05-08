@@ -5,6 +5,8 @@ function applyTemplate(tmpl, data) {
             tmpl = tmpl.replace(tag, data[i].value);
         }
     }
+    var today = new Date();
+    tmpl = tmpl.replace('{%created_at%}', "сегодня в " + today.getHours() + ':' + today.getMinutes());
     return tmpl;
 }
 
@@ -15,8 +17,8 @@ var addtriggers     = $('.add-toggle-trigger'),
     postLayout      = $('#post-layout').html(),
     postsContainer  = $('#posts-container'),
     postDeleteBtns  = $('.post-delete'),
-    postEditBtns    = $('.post-edit');
-
+    postList        = $('#post-list'),
+    updateForm      = $('#update-post');
 
 addcontent.wysihtml5({locale: "ru-RU"});
 addtriggers.click(function() {
@@ -25,20 +27,28 @@ addtriggers.click(function() {
 addform.submit(function(e) {
     e.preventDefault();
     var data = addform.serializeArray();
-    console.log(data);
     $.post(this.action, data, function(response) {
+        console.log(data);
         addblocks.fadeToggle();
         postsContainer.prepend(applyTemplate(postLayout, data));
         $('.wysihtml5-sandbox').contents().find('body').html('');
         addform.find('input').val('');
-        console.log(response);
     }, "json");
 });
 postDeleteBtns.click(function() {
     var id = $(this).parents('.post-wrapper').data('id');
     if(confirm("Вы действительно хотите удалить эту запись?")) {
         $.post('/delpost/' + id, function() {
-            location.reload();
+            location.pathname = '/blog';
         });
     }
+});
+updateForm.submit(function(e) {
+    e.preventDefault();
+    var data = updateForm.serialize();
+    $.post(this.action, data, function(response) {
+        if(response.success) {
+            location.search = '';
+        }
+    }, "json");
 });

@@ -61,7 +61,7 @@
                         <p class="notice"><em>Нет записей<em></p>
                     
                     <?php else: ?>
-                        <ul class="post-list">
+                        <ul class="post-list" id="post-list">
                             <?php foreach (($posts?:array()) as $post): ?>
                                 <li><a href="/blog/<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></li>
                             <?php endforeach; ?>

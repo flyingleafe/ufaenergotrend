@@ -850,6 +850,9 @@ footer
   background: $almost-white
   +box-shadow(rgba(black, .3) 0 4px 5px 0)
   .close
+    color: white
+    text-shadow: none
+    opacity: 1
     cursor: pointer
     float: right
     padding: 0.7em
@@ -885,16 +888,19 @@ footer
     float: left
 
 .ui-input
-  display: block
+  display: block !important
   @extend .border-box
-  width: auto
+  height: auto !important
   border: none
   font-size: 1.2em
   padding: 0.3em
-  margin: 0.8em 0.3em
+  margin: 0.8em 0.3em !important
+  +border-radius(0px !important)
   +box-shadow(inset rgba(black, .2) 0 0 2px 2px)
   outline: 1px solid $gray
   outline-offset: 0.1em
+  &:focus
+    outline: 1px solid $gray !important
 
 // maintenance
 .maintenance, .sky-wrapper

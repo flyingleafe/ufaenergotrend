@@ -1,4 +1,4 @@
-c<footer>
+<footer>
     <div class="container clearfix">
         <ul class="column">
             <li><a href="/blog">Блог компании</a></li>
